@@ -1,0 +1,305 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin-left: 10px;
+    margin-right: 10px;
+    color:rgb(67, 80, 163);
+}
+
+section .container{
+    margin-bottom: 40px;
+}
+
+.banners{
+    position:relative;
+    margin:auto;
+}
+#banner{
+    position: absolute;
+    top:35%;
+    left:40%;
+    color:#f7f7f7;
+}
+
+#nav-bar .container{
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container{
+    padding: 10px 20px;
+    border-right: 1px solid rgb(145, 157, 154);
+ }
+
+.nav-container-use{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid rgb(145, 157, 154);
+    color:#f7f7f7;
+}
+
+.nav-container a{  
+    padding: 10px 20px;
+    text-decoration: none;
+    color:#f7f7f7;
+}
+
+
+.bg-grey .container{
+    background: #f7f7f7;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 10px;
+}
+
+
+
+.info{
+    list-style-type: none;
+    
+}
+.container #target{
+    padding-right: 20px;
+    background-color: rgb(249, 253, 251);
+}
+
+.info li, #target p{
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+
+.container .container-item{
+    border: 1px solid rgb(145, 157, 154);
+    padding: 10px;
+}
+
+#job-info .container{
+    display:grid;
+    grid-template-columns: 32% 32% 32%;
+    padding-top: 20px;
+    column-gap: 27px;
+    row-gap: 20px;
+}
+
+
+ul p{
+    padding-left: 15px;
+}
+
+#job-info li{
+    list-style-position: inside;
+    padding-bottom: 20px;
+}
+
+.container-item .interest{
+    display:flex;
+    padding-top: 30px;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.interest-item{
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+.spans{
+    border: 1px solid rgb(71, 94, 86); 
+    width: 30px; height: 30px; 
+    border-radius: 50%;
+    text-align: center;
+    margin:auto;
+}
+
+.spans .ic{
+    margin-top:5px;
+}
+
+.ic-megaphone{
+    text-align: center;
+    align-items: center;
+}
+
+.languge{
+    display:flex;
+    margin: 10px;
+}
+
+#certificate .container{
+    padding-top: 10px;
+}
+
+#project .container{
+    padding-top: 10px;
+}
+
+.poject-item a{
+    text-decoration: none;
+    color:blue;
+    font-weight:bold;
+}
+
+.prize{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    width:100%;
+    row-gap: 20px;
+    padding-top: 10px;
+}
+
+.prize-item{
+    display: flex;
+}
+
+.prize-item-item{
+    padding-left: 10px;
+}
+
+.poject{
+    display:grid;
+    grid-template-columns: 32% 32% 32%;
+    width:100%;
+    column-gap: 27px;
+}
+.poject-item{
+    border: 1px solid rgb(71, 94, 86); 
+}
+
+.prize-item .prize-item-item1{
+    border-right: 1px solid rgb(71, 94, 86);
+}
+  
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td{
+    border-top: 1px solid; 
+    padding: 15px;
+}
+
+.container-footer ul{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: aliceblue;
+    list-style-type: none;
+    gap:50px;
+}
+
+.btn-item{
+    margin-top: 20px;
+    width: 100px;
+    height:30px;
+    background-color: grey;
+    border-radius: 10%;
+    border: 1px solid;
+    color:#f7f7f7;
+}
+
+.container-form #fnames{
+    width: 200px;
+    border: 1px solid;
+    height:25px;
+}
+
+#experience-title:hover #ex-btn-more{
+    display: block;
+} 
+
+@media only screen and (max-width: 992px) {
+    #useName {
+      display:none;
+    }
+
+    #job-info .container{
+        display:grid;
+        grid-template-columns: 48% 48%;
+        padding-top: 20px;
+        column-gap: 27px;
+        row-gap: 20px;
+    }
+
+    .poject{
+        display:grid;
+        grid-template-columns: 48% 48%;
+        width:100%;
+        column-gap: 27px;
+    }
+
+    td{
+        border-top: 1px solid rgb(242, 10, 10); 
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #useName {
+      display:none;
+    }
+
+    #nav-bar .container{
+        display:block;
+    }
+
+
+    .bg-grey .container{
+        display:block;
+    }
+    
+    #target{
+        padding-bottom: 20px;
+    }
+
+    #job-info .container{
+        display:block;
+    }
+
+    .container .container-item{
+        padding: 10px;
+        
+    }
+
+    .prize{
+        display: block;
+        padding-top: 10px;
+        border: 2px solid rgb(145, 157, 154);
+    }
+
+    .prize .line{
+        display: none;
+    }
+    
+    .prize div{
+        padding-top: 20px;
+    }
+
+    .prize-item .prize-item-item{
+        border-right: none;
+    }
+
+    .poject{
+        display: block;
+    }
+
+    .poject-item{
+        border: 2px solid rgb(145, 157, 154);
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
